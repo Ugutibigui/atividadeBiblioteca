@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <section class="first-section">
+        <header class="header-buttons">
+            <div class="buttons-container">
+                <div class="buttons-content">
+                    <a href="#">Início</a>
+                    <a href="#form">Cadastro</a>
+                    <a href="./pages/biblioteca.html">Biblioteca</a>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="content">
+                <h1>Adicione livros, leia e conheça novas historias</h1>
+                <a href="#form">
+                    Cadastre
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="form-section" id="form">
+        <div class="align-items">
+            <h1>Cadastre um livro</h1>
+            <div class="local-form">
+                <div class="local-img">
+                    <img src="../assets/biblioteca.png" alt="">
+                </div>
+                <div class="local-action-form">
+                    <form action="./scripts/save.php" method="post">
+                        <div class="local-inputs">
+                            <div class="input-item">
+                                <p>Titulo</p>
+                                <input type="text" name="titulo" id="titulo">
+                            </div>
+                            <div class="input-item">
+                                <p>Subtitulo</p>
+                                <input type="text" name="subtitulo" id="subtitulo">
+                            </div>
+                            <div class="input-item">
+                                <p>Autor (nome)</p>
+                                <input type="text" name="autorNomeUm" id="autorNomeUm">
+                            </div>
+                            <div class="input-item">
+                                <p>Autor (sobrenome)</p>
+                                <input type="text" name="autorSobrenomeUm" id="autorSobrenomeUm">
+                            </div>
+                            <div class="input-item">
+                                <p>Autor (nome)</p>
+                                <input type="text" name="autorNomeDois" id="autorNomeDois">
+                            </div>
+                            <div class="input-item">
+                                <p>Autor (sobrenome)</p>
+                                <input type="text" name="autorSobrenomeDois" id="autorSobrenomeDois">
+                            </div>
+                            <div class="input-item">
+                                <p>Autor (nome)</p>
+                                <input type="text" name="autorNomeTres" id="autorNomeTres">
+                            </div>
+                            <div class="input-item">
+                                <p>Autor (sobrenome)</p>
+                                <input type="text" name="autorSobrenomeTres" id="autorSobrenomeTres">
+                            </div>
+                            <div class="align-all-itens">
+                                <div class="input-item2"> 
+                                    <p>N° Edição</p>
+                                    <input type="number" name="edicao" id="edicao">
+                                </div>
+                                <div class="input-item2">
+                                    <p>Ano</p>
+                                    <input type="number" name="ano" id="ano">
+                                </div>
+                                <div class="input-item2">
+                                    <p>Editora</p>
+                                    <input type="text" name="editora" id="editora">
+                                </div>
+                            </div>
+                            <div class="align-all-itens">
+                                <div class="input-item2">
+                                    <p>Volume</p>
+                                    <input type="number" name="volume" id="volume">
+                                </div>
+                                <div class="input-item2">
+                                    <p>ISBN</p>
+                                    <input type="text" name="isbn" id="isbn">
+                                </div>
+                                <div class="input-item2">
+                                    <p>Preço</p>
+                                    <input type="number" name="preco" id="preco">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Cadastrar" class="button-submit" name="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Todos direitos reservados</p>
+    </footer>
+</body>
+
+</html>
