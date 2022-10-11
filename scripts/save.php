@@ -16,10 +16,8 @@
   $isbn = $_POST['isbn'];
   $preco = $_POST['preco'];
   
-  $query = "INSERT INTO `livros`(`id`, `capa`, `titulo`, `subtitulo`, `ano`, `editora`, `volume`, `isbn`, `valor`, `etal`, `NomeAutor1`, `SobreNomeAutor1`, `NomeAutor2`, `SobreNomeAutor2`, `NomeAutor3`, `SobreNomeAutor3`, `categoria`) VALUES ( 1, 'capa', '$titulo', '$subtitulo', $ano, '$editora', $volume, $isbn, $preco, 1, '$autorNomeUm', '$autorSobrenomeUm', '$autorNomeDois', '$autorSobrenomeDois', '$autorNomeTres', '$autorSobrenomeTres', 'categoria')";
-  
- // "INSERT INTO livros(capa, titulo, subtitulo, ano, editora, volume, isbn, valor, etal, NomeAutor1, SobreNomeAutor1, NomeAutor2, SobreNomeAutor2, NomeAutor3, SobreNomeAutor3, categoria)
-  //           VALUES ('capa', '$titulo', '$subtitulo', '$ano', '$editora', '$volume', '$isbn', '$preco', 'etal', '$autorNomeUm', '$autorSobrenomeUm','$autorNomeDois', '$autorSobrenomeDois', '$autorNomeTres', '$autorSobrenomeTres', 'categoria')";
+  $query = "INSERT INTO `livros`(`capa`, `titulo`, `subtitulo`, `ano`, `editora`, `volume`, `isbn`, `valor`, `etal`, `NomeAutor1`, `SobreNomeAutor1`, `NomeAutor2`, `SobreNomeAutor2`, `NomeAutor3`, `SobreNomeAutor3`, `categoria`) VALUES ('capa', '$titulo', '$subtitulo', $ano, '$editora', $volume, $isbn, $preco, 1, '$autorNomeUm', '$autorSobrenomeUm', '$autorNomeDois', '$autorSobrenomeDois', '$autorNomeTres', '$autorSobrenomeTres', 'categoria')";
+  echo $query;
 
   mysqli_query($conn, $query);
 
@@ -28,7 +26,6 @@
     // Free result set
     mysqli_free_result($result);
   }
-  mysqli_close($conn);
-
-  
+  //mysqli_close($conn);
+  header('Location: http://localhost/pages/biblioteca.php');
 ?>
