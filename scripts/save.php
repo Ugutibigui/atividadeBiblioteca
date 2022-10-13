@@ -15,8 +15,14 @@
   $volume = $_POST['volume'];
   $isbn = $_POST['isbn'];
   $preco = $_POST['preco'];
+
+  $etal = 0;
+
+  if($autorNomeUm != "" && $autorNomeDois != "" && $autorNomeTres != ""){
+    $etal = 1;
+  }
   
-  $query = "INSERT INTO `livros`(`capa`, `titulo`, `subtitulo`, `ano`, `editora`, `volume`, `isbn`, `valor`, `etal`, `NomeAutor1`, `SobreNomeAutor1`, `NomeAutor2`, `SobreNomeAutor2`, `NomeAutor3`, `SobreNomeAutor3`, `categoria`) VALUES ('capa', '$titulo', '$subtitulo', $ano, '$editora', $volume, $isbn, $preco, 1, '$autorNomeUm', '$autorSobrenomeUm', '$autorNomeDois', '$autorSobrenomeDois', '$autorNomeTres', '$autorSobrenomeTres', 'categoria')";
+  $query = "INSERT INTO `livros`(`capa`, `titulo`, `subtitulo`, `ano`, `editora`, `volume`, `isbn`, `valor`, `etal`, `NomeAutor1`, `SobreNomeAutor1`, `NomeAutor2`, `SobreNomeAutor2`, `NomeAutor3`, `SobreNomeAutor3`, `categoria`) VALUES ('capa', '$titulo', '$subtitulo', $ano, '$editora', $volume, $isbn, $preco, $etal, '$autorNomeUm', '$autorSobrenomeUm', '$autorNomeDois', '$autorSobrenomeDois', '$autorNomeTres', '$autorSobrenomeTres', 'categoria')";
   echo $query;
 
   mysqli_query($conn, $query);
