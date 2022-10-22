@@ -33,5 +33,5 @@
     mysqli_free_result($result);
   }
   //mysqli_close($conn);
-  header('Location: http://localhost/pages/biblioteca.php');
+  header('Location: http://localhost/site/pages/biblioteca.php');
 ?>

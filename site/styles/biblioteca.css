@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', Arial;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+#home {
+    background-image: url("../assets/background.gif");
+    background-size: cover;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.header-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logotipo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotipo {
+    width: 70%;
+}
+
+.options-container {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options-container a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(180deg, #FCE185 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.options-container a:hover {
+    color: white;
+}
