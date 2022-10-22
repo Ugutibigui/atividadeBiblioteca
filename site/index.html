@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="home">
+        <header>
+            <div class="header-container">
+                <div id="logotipo-container">
+                    <img class="logotipo" src="./assets/logotipo.png" alt="">
+                </div>
+                <div class="options-container">
+                    <a href="#home">Inicio</a>
+                    <a href="#form">Adicionar</a>
+                    <a href="./pages/biblioteca.php">Biblioteca</a>
+                    <a href="#home">Entrar</a>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content-infos">
+                <h1>Adicione <span>livros</span> ou conheça outras histórias</h1>
+                <a href="#form">Cadastrar</a>
+                <a href="./pages/biblioteca.php">Ler</a>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="form-container">
+            <h1>Adiciona uma história </h1>
+            <div class="geral-form">
+                <div class="local-image-form">
+                    <img src="./assets/imgForm.png" alt="">
+                </div>
+                <form action="./scripts/save.php" method="post">
+                    <div class="top-form">
+                        <div class="left-form">
+                            <div class="item">
+                                <p>Titulo</p>
+                                <input type="text" required name="titulo" id="titulo">
+                            </div>
+                            <div class="item">
+                                <p>Autor (nome)</p>
+                                <input type="text" required name="autorNomeUm" id="autorNomeUm">
+                            </div>
+                            <div class="item">
+                                <p>Autor (nome)</p>
+                                <input type="text" name="autorNomeDois" id="autorNomeDois">
+                            </div>
+                            <div class="item">
+                                <p>Autor (nome)</p>
+                                <input type="text" name="autorNomeTres" id="autorNomeTres">
+                            </div>
+                            <div class="item">
+                                <p>Editora</p>
+                                <input type="text" required name="editora" id="editora">
+                            </div>
+                            <div class="item">
+                                <p>ISBN</p>
+                                <input type="number" required name="isbn" id="isbn">
+                            </div>
+                        </div>
+                        <div class="rigth-form">
+                            <div class="item">
+                                <p>Subtitulo</p>
+                                <input type="text" name="subtitulo" id="subtitulo">
+                            </div>
+                            <div class="item">
+                                <p>Autor (sobrenome)</p>
+                                <input type="text" required name="autorSobrenomeUm" id="autorSobrenomeUm">
+                            </div>
+                            <div class="item">
+                                <p>Autor (sobrenome)</p>
+                                <input type="text" name="autorSobrenomeDois" id="autorSobrenomeDois">
+                            </div>
+                            <div class="item">
+                                <p>Autor (sobrenome)</p>
+                                <input type="text" name="autorSobrenomeTres" id="autorSobrenomeTres">
+                            </div>
+                            <div class="align-item">
+                                <div class="itemd">
+                                    <p>N°Edição</p>
+                                    <input type="number" required name="edicao" id="edicao">
+                                </div>
+                                <div class="itemd">
+                                    <p>Ano</p>
+                                    <input type="number" required name="ano" id="ano">
+                                </div>
+                            </div>
+                            <div class="align-item">
+                                <div class="itemd">
+                                    <p>Vol.</p>
+                                    <input type="text" required name="volume" id="volume">
+                                </div>
+                                <div class="itemd">
+                                    <p>Preço</p>
+                                    <input type="number" required name="preco" id="preco">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Cadastrar Livro" class="buttonForm">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            © Todos os direitos reservados.
+        </p>
+    </footer>
+</body>
+
+</html>
