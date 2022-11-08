@@ -47,7 +47,7 @@ header {
     width: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .options-container a {
@@ -58,7 +58,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
+    margin: 0px 20px;
     transition: 200ms;
 }
 

@@ -49,7 +49,7 @@ header {
     width: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .options-container a {
@@ -60,7 +60,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
+    margin: 0px 15px;
     transition: 200ms;
 }
 
@@ -74,6 +74,37 @@ header {
     height: auto;
     display: flex;
     justify-content: center;
+}
+
+.itens-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.settings{
+    width: 340px;
+    height: 489px;
+    position:static;
+    background: #0c1030;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.button-settings{
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.514);
+    background-color: #0c1030;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.button-settings a {
+    text-decoration: none;
+    color: white;
 }
 
 .content {
@@ -112,16 +143,14 @@ header {
 .local-books {
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .card-book {
     /* max-width: 960px; */
-    width: 480px;
+    width: 445px;
     height: 239px;
-    margin: 19px;
+    margin: 0px 15px 15px 0px;
     background-color: #0C1030;
     /* background: linear-gradient(98.68deg, #001038 0.72%, #004A5A 100%); */
     border-radius: 16px;
